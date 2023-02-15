@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h3, p, a {
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+p, a {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+body {
+    background-image: url("./graphics/background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerLogo {
+    max-height: 10vh;
+}
+
+.header, .mainSection {
+    width: min(700px, 90vw);
+}
+
+.mainSection {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 16px;
+    backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px) brightness(70%);
+    box-shadow: 5px 4px 15px rgb(62, 44, 25);
+}
+
+.mainSection > * {
+    width: 100%;
+    text-align: center;
+}
+
+.contactsContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    gap: 16px;
+}
+
+h3 {
+    margin: 16px;
+}
+
+.contactText {
+    text-decoration: none;
+}
+
+.contactIcon {
+    filter: invert(1);
+    width: 20px;
+}
+
+.socialMedia {
+    width: 48px;
+}
+
+.socialMediaIconsContainer {
+    display: flex;
+    gap: 16px;
+}
