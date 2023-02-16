@@ -45,7 +45,7 @@ body {
 }
 
 .headerLogo {
-    /* max-height: 10vh; */
+    max-height: 8vh;
 }
 
 .header, .mainSection {
